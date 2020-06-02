@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    
+
+}
+
+nav a{
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    animation: moverDerecha 1s ease-in;
+}
+
+header{
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    height: auto;
+    padding: 48px;
+    width: 100%;
+    
+
+
+}
+
+.container{
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    overflow: hidden;
+justify-content: space-around;
+}
+
+img{
+    display: block;
+    height: 405px;
+    object-fit: cover;
+    animation: arriba 1s ease-in;
+
+
+}
+
+.textos{
+    width: 50%;
+    color: black;
+    
+}
+
+.textos h1{
+    font-size: 80px;
+    animation: moverIzquierda 1s ease-in;
+
+}
+
+.textos h2{
+    font-size: 40px;
+    animation: moverDerecha 1s ease-in;
+
+}
+.textos a{
+    display: inline-block;
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    margin-top:30px;
+    border: 1px solid white;
+    width: 150px;
+    text-align: center;
+    border-radius: 3px;
+    padding: 10px 0;
+    animation: arriba 1s ease-in;
+
+}
+
+.wave{
+height: 100px;
+width: 100%;
+background: #373B44;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+@keyframes moverIzquierda{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes moverDerecha{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes arriba{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+
